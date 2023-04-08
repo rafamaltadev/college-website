@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <title>Web Design | Easy Tutorials</title>
+  </head>
+  <body>
+    <header class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <ion-icon
+            class="icon"
+            name="close-circle-outline"
+            onclick="hideMenu()"
+          ></ion-icon>
+          <ul>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="about.html">SOBRE</a>
+            </li>
+            <li>
+              <a href="cursos.html">CURSOS</a>
+            </li>
+            <li>
+              <a href="blog.html">BLOG</a>
+            </li>
+            <li>
+              <a href="contato.html">CONTATO</a>
+            </li>
+          </ul>
+        </div>
+        <ion-icon
+          class="icon"
+          name="menu-outline"
+          onclick="showMenu()"
+        ></ion-icon>
+      </nav>
+      <h1>Cursos</h1>
+    </header>
+
+    <section class="course">
+      <h1>Nossos Cursos</h1>
+      <p>
+        Accusantium nobis incidunt ratione earum aspernatur facere beatae optio
+        debitis error exercitationem.
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Graduação</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repellendus, fugit necessitatibus id quia odio totam iste amet
+            aliquid aliquam esse voluptas dolorem, in ullam sed quae veritatis
+            ab ea tempora.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Pós-Graduação</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repellendus, fugit necessitatibus id quia odio totam iste amet
+            aliquid aliquam esse voluptas dolorem, in ullam sed quae veritatis
+            ab ea tempora.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Mestrado</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repellendus, fugit necessitatibus id quia odio totam iste amet
+            aliquid aliquam esse voluptas dolorem, in ullam sed quae veritatis
+            ab ea tempora.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="facilities">
+      <h1>Nossas Instalações</h1>
+      <p>
+        Accusantium nobis incidunt ratione earum aspernatur debitis error
+        exercitationem.
+      </p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="img/library.png" alt="Biblioteca" />
+          <h3>Biblioteca</h3>
+          <p>
+            Accusantium nobis incidunt ratione earum aspernatur facere beatae
+            optio debitis error exercitationem.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="img/basketball.png" alt="Biblioteca" />
+          <h3>Quadras completas</h3>
+          <p>
+            Accusantium nobis incidunt ratione earum aspernatur facere beatae
+            optio debitis error exercitationem.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="img/cafeteria.png" alt="Biblioteca" />
+          <h3>Comida saudável</h3>
+          <p>
+            Accusantium nobis incidunt ratione earum aspernatur facere beatae
+            optio debitis error exercitationem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h4>Sobre nós</h4>
+      <p>
+        Accusantium nobis incidunt ratione earum aspernatur facere beatae optio
+        debitis error exercitationem.
+      </p>
+      <div class="social">
+        <a href="https://github.com/rafamaltadev" target="_blank"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a href="https://twitter.com/o_rafamalta" target="_blank"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
+        <a href="https://www.instagram.com/o_rafamalta/" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="https://www.linkedin.com/in/rafamalta/" target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+      </div>
+      <p class="rafa">
+        Feito com <ion-icon class="love" name="heart"></ion-icon> por
+        <a href="https://github.com/rafamaltadev" target="_blank"
+          ><span>Rafa Malta</span></a
+        >
+      </p>
+    </footer>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+      const navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- JavaScript for icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

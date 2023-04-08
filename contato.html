@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <title>Web Design | Easy Tutorials</title>
+  </head>
+  <body>
+    <header class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <ion-icon
+            class="icon"
+            name="close-circle-outline"
+            onclick="hideMenu()"
+          ></ion-icon>
+          <ul>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="about.html">SOBRE</a>
+            </li>
+            <li>
+              <a href="cursos.html">CURSOS</a>
+            </li>
+            <li>
+              <a href="blog.html">BLOG</a>
+            </li>
+            <li>
+              <a href="contato.html">CONTATO</a>
+            </li>
+          </ul>
+        </div>
+        <ion-icon
+          class="icon"
+          name="menu-outline"
+          onclick="showMenu()"
+        ></ion-icon>
+      </nav>
+      <h1>Contato</h1>
+    </header>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14979.075895980348!2d-40.25778845!3d-20.185342449999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81ee6c62cb329%3A0x47bcc2cc612cfd92!2sCondom%C3%ADnio%20Parque%20Colombo!5e0!3m2!1spt-BR!2sbr!4v1680982444953!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <ion-icon class="icon" name="home-outline"></ion-icon>
+            <span>
+              <h5>Av. Braúna, 1000</h5>
+              <p>Serra/ES, Brasil</p>
+            </span>
+          </div>
+          <div>
+            <ion-icon class="icon" name="call-outline"></ion-icon>
+            <span>
+              <h5>+55 (27) 99854-2453</h5>
+              <p>de segunda à sexta, das 9h às 17h</p>
+            </span>
+          </div>
+          <div>
+            <ion-icon class="icon" name="mail-outline"></ion-icon>
+            <span>
+              <h5>E-mail de contato</h5>
+              <p>rafael.projetos82@gmail.com</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Seu Nome" required />
+            <input type="email" name="email" placeholder="Seu Email" required />
+            <input type="text" name="subject" placeholder="Assunto" required />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Deixe sua mensagem"
+              required
+            ></textarea>
+            <button class="btn red-btn" type="submit">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h4>Sobre nós</h4>
+      <p>
+        Accusantium nobis incidunt ratione earum aspernatur facere beatae optio
+        debitis error exercitationem.
+      </p>
+      <div class="social">
+        <a href="https://github.com/rafamaltadev" target="_blank"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a href="https://twitter.com/o_rafamalta" target="_blank"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
+        <a href="https://www.instagram.com/o_rafamalta/" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="https://www.linkedin.com/in/rafamalta/" target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+      </div>
+      <p class="rafa">
+        Feito com <ion-icon class="love" name="heart"></ion-icon> por
+        <a href="https://github.com/rafamaltadev" target="_blank"
+          ><span>Rafa Malta</span></a
+        >
+      </p>
+    </footer>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+      const navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- JavaScript for icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
